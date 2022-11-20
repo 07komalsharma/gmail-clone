@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Mail from './Mail';
 import ErrorPage from './error-page';
 import Root from './routes/root';
+import EmailList from './EmailList';
 
 function App() {
   const router = createBrowserRouter([
@@ -16,7 +17,12 @@ function App() {
       path: "/mail",
       element:<Mail />,
       errorElement: <ErrorPage/>
-    }
+    },
+    // {
+    //   path:"/",
+    //   element:<EmailList/>,
+    //   errorElement:<ErrorPage/>
+    // }
   ])
   return (
     <div className="app">
